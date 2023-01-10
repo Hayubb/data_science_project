@@ -1,0 +1,563 @@
+Microsoft Windows [Version 10.0.19044.2251]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\ayub_>cd C:\Users\ayub_\OneDrive\Desktop\git_tutorial1
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git init
+Initialized empty Git repository in C:/Users/ayub_/OneDrive/Desktop/git_tutorial1/.git/
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git add .
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git commit -m "version1"
+[master (root-commit) 323efc6] version1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git add .
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git commit -m "version2"
+[master ce0a09c] version2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>get add.
+'get' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git add .
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git commit -m "version3"
+[master b3de8a7] version3
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git log --all --graph
+* commit b3de8a71fce26ea96f6dddd6bf4cfb37f5b09746 (HEAD -> master)
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:37:19 2023 +0100
+|
+|     version3
+|
+* commit ce0a09cb0506af4960917229e9e515cca7c277c0
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:35:57 2023 +0100
+|
+|     version2
+|
+* commit 323efc60aabf98eb53bac1d372a0536434d9d58c
+  Author: Hayubb <agiriayuba246@gmail.com>
+  Date:   Sun Jan 8 20:34:59 2023 +0100
+
+      version1
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git branch feature1
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git log --all --graph
+* commit b3de8a71fce26ea96f6dddd6bf4cfb37f5b09746 (HEAD -> master, feature1)
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:37:19 2023 +0100
+|
+|     version3
+|
+* commit ce0a09cb0506af4960917229e9e515cca7c277c0
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:35:57 2023 +0100
+|
+|     version2
+|
+* commit 323efc60aabf98eb53bac1d372a0536434d9d58c
+  Author: Hayubb <agiriayuba246@gmail.com>
+  Date:   Sun Jan 8 20:34:59 2023 +0100
+
+      version1
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git checkout feature1
+Switched to branch 'feature1'
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git log --all --graph
+* commit b3de8a71fce26ea96f6dddd6bf4cfb37f5b09746 (HEAD -> feature1, master)
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:37:19 2023 +0100
+|
+|     version3
+|
+* commit ce0a09cb0506af4960917229e9e515cca7c277c0
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:35:57 2023 +0100
+|
+|     version2
+|
+* commit 323efc60aabf98eb53bac1d372a0536434d9d58c
+  Author: Hayubb <agiriayuba246@gmail.com>
+  Date:   Sun Jan 8 20:34:59 2023 +0100
+
+      version1
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git add .
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git commit -m "Fcommit1"
+[feature1 db8cc41] Fcommit1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 feature
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git log --all --graph
+* commit db8cc413e3ec5af6eebd43fe2bb1a0cbad95964d (HEAD -> feature1)
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:45:30 2023 +0100
+|
+|     Fcommit1
+|
+* commit b3de8a71fce26ea96f6dddd6bf4cfb37f5b09746 (master)
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:37:19 2023 +0100
+|
+|     version3
+|
+* commit ce0a09cb0506af4960917229e9e515cca7c277c0
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:35:57 2023 +0100
+|
+|     version2
+|
+* commit 323efc60aabf98eb53bac1d372a0536434d9d58c
+  Author: Hayubb <agiriayuba246@gmail.com>
+  Date:   Sun Jan 8 20:34:59 2023 +0100
+
+      version1
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git add .
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git commit -m "Fcommit2"
+[feature1 904eeb2] Fcommit2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git log --all --graph
+* commit 904eeb2795a2eb6033b27288c880a4b4c53f48ad (HEAD -> feature1)
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:47:10 2023 +0100
+|
+|     Fcommit2
+|
+* commit db8cc413e3ec5af6eebd43fe2bb1a0cbad95964d
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:45:30 2023 +0100
+|
+|     Fcommit1
+|
+* commit b3de8a71fce26ea96f6dddd6bf4cfb37f5b09746 (master)
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:37:19 2023 +0100
+|
+|     version3
+|
+* commit ce0a09cb0506af4960917229e9e515cca7c277c0
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:35:57 2023 +0100
+|
+|     version2
+|
+* commit 323efc60aabf98eb53bac1d372a0536434d9d58c
+  Author: Hayubb <agiriayuba246@gmail.com>
+  Date:   Sun Jan 8 20:34:59 2023 +0100
+
+      version1
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git checkout master
+Switched to branch 'master'
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>\git log --all --graph
+'\git' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git log --all --graph
+* commit 904eeb2795a2eb6033b27288c880a4b4c53f48ad (feature1)
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:47:10 2023 +0100
+|
+|     Fcommit2
+|
+* commit db8cc413e3ec5af6eebd43fe2bb1a0cbad95964d
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:45:30 2023 +0100
+|
+|     Fcommit1
+|
+* commit b3de8a71fce26ea96f6dddd6bf4cfb37f5b09746 (HEAD -> master)
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:37:19 2023 +0100
+|
+|     version3
+|
+* commit ce0a09cb0506af4960917229e9e515cca7c277c0
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:35:57 2023 +0100
+|
+|     version2
+|
+* commit 323efc60aabf98eb53bac1d372a0536434d9d58c
+  Author: Hayubb <agiriayuba246@gmail.com>
+  Date:   Sun Jan 8 20:34:59 2023 +0100
+
+      version1
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git add .
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git commit -m "bug fix"
+[master 6152663] bug fix
+ 1 file changed, 1 insertion(+)
+ create mode 100644 bugfix
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git log --all --graph
+* commit 6152663b24b874fbd4551ca122b811f35a85e218 (HEAD -> master)
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:53:19 2023 +0100
+|
+|     bug fix
+|
+| * commit 904eeb2795a2eb6033b27288c880a4b4c53f48ad (feature1)
+| | Author: Hayubb <agiriayuba246@gmail.com>
+| | Date:   Sun Jan 8 20:47:10 2023 +0100
+| |
+| |     Fcommit2
+| |
+| * commit db8cc413e3ec5af6eebd43fe2bb1a0cbad95964d
+|/  Author: Hayubb <agiriayuba246@gmail.com>
+|   Date:   Sun Jan 8 20:45:30 2023 +0100
+|
+|       Fcommit1
+|
+* commit b3de8a71fce26ea96f6dddd6bf4cfb37f5b09746
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:37:19 2023 +0100
+|
+|     version3
+|
+* commit ce0a09cb0506af4960917229e9e515cca7c277c0
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:35:57 2023 +0100
+|
+|     version2
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git checkout feature1
+Switched to branch 'feature1'
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git log --all --graph
+* commit 6152663b24b874fbd4551ca122b811f35a85e218 (master)
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:53:19 2023 +0100
+|
+|     bug fix
+|
+| * commit 904eeb2795a2eb6033b27288c880a4b4c53f48ad (HEAD -> feature1)
+| | Author: Hayubb <agiriayuba246@gmail.com>
+| | Date:   Sun Jan 8 20:47:10 2023 +0100
+| |
+| |     Fcommit2
+| |
+| * commit db8cc413e3ec5af6eebd43fe2bb1a0cbad95964d
+|/  Author: Hayubb <agiriayuba246@gmail.com>
+|   Date:   Sun Jan 8 20:45:30 2023 +0100
+|
+|       Fcommit1
+|
+* commit b3de8a71fce26ea96f6dddd6bf4cfb37f5b09746
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:37:19 2023 +0100
+|
+|     version3
+|
+* commit ce0a09cb0506af4960917229e9e515cca7c277c0
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:35:57 2023 +0100
+|
+|     version2
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git add .
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git commit -m "feature done"
+[feature1 96d9a0e] feature done
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git log --all -- graph
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git log --all --graph
+* commit 96d9a0e25643c7d2bd28f30bdf5d58bd0298236c (HEAD -> feature1)
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 21:00:15 2023 +0100
+|
+|     feature done
+|
+* commit 904eeb2795a2eb6033b27288c880a4b4c53f48ad
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:47:10 2023 +0100
+|
+|     Fcommit2
+|
+* commit db8cc413e3ec5af6eebd43fe2bb1a0cbad95964d
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:45:30 2023 +0100
+|
+|     Fcommit1
+|
+| * commit 6152663b24b874fbd4551ca122b811f35a85e218 (master)
+|/  Author: Hayubb <agiriayuba246@gmail.com>
+|   Date:   Sun Jan 8 20:53:19 2023 +0100
+|
+|       bug fix
+|
+* commit b3de8a71fce26ea96f6dddd6bf4cfb37f5b09746
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:37:19 2023 +0100
+|
+|     version3
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git checkout master
+Switched to branch 'master'
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git log --all --graph
+* commit 96d9a0e25643c7d2bd28f30bdf5d58bd0298236c (feature1)
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 21:00:15 2023 +0100
+|
+|     feature done
+|
+* commit 904eeb2795a2eb6033b27288c880a4b4c53f48ad
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:47:10 2023 +0100
+|
+|     Fcommit2
+|
+* commit db8cc413e3ec5af6eebd43fe2bb1a0cbad95964d
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:45:30 2023 +0100
+|
+|     Fcommit1
+|
+| * commit 6152663b24b874fbd4551ca122b811f35a85e218 (HEAD -> master)
+|/  Author: Hayubb <agiriayuba246@gmail.com>
+|   Date:   Sun Jan 8 20:53:19 2023 +0100
+|
+|       bug fix
+|
+* commit b3de8a71fce26ea96f6dddd6bf4cfb37f5b09746
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 20:37:19 2023 +0100
+|
+|     version3
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git merge feature1 -m "merge feature"
+Merge made by the 'ort' strategy.
+ feature | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 feature
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git log --all --graph
+*   commit f7e2dd7981656ae78164fb08db8d1b77d2b3acf2 (HEAD -> master)
+|\  Merge: 6152663 96d9a0e
+| | Author: Hayubb <agiriayuba246@gmail.com>
+| | Date:   Sun Jan 8 21:10:30 2023 +0100
+| |
+| |     merge feature
+| |
+| * commit 96d9a0e25643c7d2bd28f30bdf5d58bd0298236c (feature1)
+| | Author: Hayubb <agiriayuba246@gmail.com>
+| | Date:   Sun Jan 8 21:00:15 2023 +0100
+| |
+| |     feature done
+| |
+| * commit 904eeb2795a2eb6033b27288c880a4b4c53f48ad
+| | Author: Hayubb <agiriayuba246@gmail.com>
+| | Date:   Sun Jan 8 20:47:10 2023 +0100
+| |
+| |     Fcommit2
+| |
+| * commit db8cc413e3ec5af6eebd43fe2bb1a0cbad95964d
+| | Author: Hayubb <agiriayuba246@gmail.com>
+| | Date:   Sun Jan 8 20:45:30 2023 +0100
+| |
+| |     Fcommit1
+| |
+* | commit 6152663b24b874fbd4551ca122b811f35a85e218
+|/  Author: Hayubb <agiriayuba246@gmail.com>
+|   Date:   Sun Jan 8 20:53:19 2023 +0100
+|
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1> git branch conflict
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git log --all --graph
+*   commit f7e2dd7981656ae78164fb08db8d1b77d2b3acf2 (HEAD -> master, conflict)
+|\  Merge: 6152663 96d9a0e
+| | Author: Hayubb <agiriayuba246@gmail.com>
+| | Date:   Sun Jan 8 21:10:30 2023 +0100
+| |
+| |     merge feature
+| |
+| * commit 96d9a0e25643c7d2bd28f30bdf5d58bd0298236c (feature1)
+| | Author: Hayubb <agiriayuba246@gmail.com>
+| | Date:   Sun Jan 8 21:00:15 2023 +0100
+| |
+| |     feature done
+| |
+| * commit 904eeb2795a2eb6033b27288c880a4b4c53f48ad
+| | Author: Hayubb <agiriayuba246@gmail.com>
+| | Date:   Sun Jan 8 20:47:10 2023 +0100
+| |
+| |     Fcommit2
+| |
+| * commit db8cc413e3ec5af6eebd43fe2bb1a0cbad95964d
+| | Author: Hayubb <agiriayuba246@gmail.com>
+| | Date:   Sun Jan 8 20:45:30 2023 +0100
+| |
+| |     Fcommit1
+| |
+* | commit 6152663b24b874fbd4551ca122b811f35a85e218
+|/  Author: Hayubb <agiriayuba246@gmail.com>
+|   Date:   Sun Jan 8 20:53:19 2023 +0100
+|
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git checkout conflict
+Switched to branch 'conflict'
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git log --all --graph
+*   commit f7e2dd7981656ae78164fb08db8d1b77d2b3acf2 (HEAD -> conflict, master)
+|\  Merge: 6152663 96d9a0e
+| | Author: Hayubb <agiriayuba246@gmail.com>
+| | Date:   Sun Jan 8 21:10:30 2023 +0100
+| |
+| |     merge feature
+| |
+| * commit 96d9a0e25643c7d2bd28f30bdf5d58bd0298236c (feature1)
+| | Author: Hayubb <agiriayuba246@gmail.com>
+| | Date:   Sun Jan 8 21:00:15 2023 +0100
+| |
+| |     feature done
+| |
+| * commit 904eeb2795a2eb6033b27288c880a4b4c53f48ad
+| | Author: Hayubb <agiriayuba246@gmail.com>
+| | Date:   Sun Jan 8 20:47:10 2023 +0100
+| |
+| |     Fcommit2
+| |
+| * commit db8cc413e3ec5af6eebd43fe2bb1a0cbad95964d
+| | Author: Hayubb <agiriayuba246@gmail.com>
+| | Date:   Sun Jan 8 20:45:30 2023 +0100
+| |
+| |     Fcommit1
+| |
+* | commit 6152663b24b874fbd4551ca122b811f35a85e218
+|/  Author: Hayubb <agiriayuba246@gmail.com>
+|   Date:   Sun Jan 8 20:53:19 2023 +0100
+|
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git add .
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git commit -m "conflict1"
+[conflict 458a294] conflict1
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git log --all --graph
+* commit 458a2941af3ef4acd54201b4041713b216d90820 (HEAD -> conflict)
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 21:22:43 2023 +0100
+|
+|     conflict1
+|
+*   commit f7e2dd7981656ae78164fb08db8d1b77d2b3acf2 (master)
+|\  Merge: 6152663 96d9a0e
+| | Author: Hayubb <agiriayuba246@gmail.com>
+| | Date:   Sun Jan 8 21:10:30 2023 +0100
+| |
+| |     merge feature
+| |
+| * commit 96d9a0e25643c7d2bd28f30bdf5d58bd0298236c (feature1)
+| | Author: Hayubb <agiriayuba246@gmail.com>
+| | Date:   Sun Jan 8 21:00:15 2023 +0100
+| |
+| |     feature done
+| |
+| * commit 904eeb2795a2eb6033b27288c880a4b4c53f48ad
+| | Author: Hayubb <agiriayuba246@gmail.com>
+| | Date:   Sun Jan 8 20:47:10 2023 +0100
+| |
+| |     Fcommit2
+| |
+| * commit db8cc413e3ec5af6eebd43fe2bb1a0cbad95964d
+| | Author: Hayubb <agiriayuba246@gmail.com>
+| | Date:   Sun Jan 8 20:45:30 2023 +0100
+| |
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git checkout master
+Switched to branch 'master'
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git log --all --graph
+* commit 458a2941af3ef4acd54201b4041713b216d90820 (conflict)
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 21:22:43 2023 +0100
+|
+|     conflict1
+|
+*   commit f7e2dd7981656ae78164fb08db8d1b77d2b3acf2 (HEAD -> master)
+|\  Merge: 6152663 96d9a0e
+| | Author: Hayubb <agiriayuba246@gmail.com>
+| | Date:   Sun Jan 8 21:10:30 2023 +0100
+| |
+| |     merge feature
+| |
+| * commit 96d9a0e25643c7d2bd28f30bdf5d58bd0298236c (feature1)
+| | Author: Hayubb <agiriayuba246@gmail.com>
+| | Date:   Sun Jan 8 21:00:15 2023 +0100
+| |
+| |     feature done
+| |
+| * commit 904eeb2795a2eb6033b27288c880a4b4c53f48ad
+| | Author: Hayubb <agiriayuba246@gmail.com>
+| | Date:   Sun Jan 8 20:47:10 2023 +0100
+| |
+| |     Fcommit2
+| |
+| * commit db8cc413e3ec5af6eebd43fe2bb1a0cbad95964d
+| | Author: Hayubb <agiriayuba246@gmail.com>
+| | Date:   Sun Jan 8 20:45:30 2023 +0100
+| |
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git add .
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git commit -m "conflict2"
+[master fc373eb] conflict2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git log --all --graph
+* commit fc373eb0df07d608b031c30ed8350cc7f949b999 (HEAD -> master)
+| Author: Hayubb <agiriayuba246@gmail.com>
+| Date:   Sun Jan 8 21:26:18 2023 +0100
+|
+|     conflict2
+|
+| * commit 458a2941af3ef4acd54201b4041713b216d90820 (conflict)
+|/  Author: Hayubb <agiriayuba246@gmail.com>
+|   Date:   Sun Jan 8 21:22:43 2023 +0100
+|
+|       conflict1
+|
+*   commit f7e2dd7981656ae78164fb08db8d1b77d2b3acf2
+|\  Merge: 6152663 96d9a0e
+| | Author: Hayubb <agiriayuba246@gmail.com>
+| | Date:   Sun Jan 8 21:10:30 2023 +0100
+| |
+| |     merge feature
+| |
+| * commit 96d9a0e25643c7d2bd28f30bdf5d58bd0298236c (feature1)
+| | Author: Hayubb <agiriayuba246@gmail.com>
+| | Date:   Sun Jan 8 21:00:15 2023 +0100
+| |
+| |     feature done
+| |
+| * commit 904eeb2795a2eb6033b27288c880a4b4c53f48ad
+| | Author: Hayubb <agiriayuba246@gmail.com>
+| | Date:   Sun Jan 8 20:47:10 2023 +0100
+| |
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>git merge conflict -m "merge conflict"
+Auto-merging feature
+CONFLICT (content): Merge conflict in feature
+Automatic merge failed; fix conflicts and then commit the result.
+
+C:\Users\ayub_\OneDrive\Desktop\git_tutorial1>
